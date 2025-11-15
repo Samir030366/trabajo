@@ -1,0 +1,274 @@
+<section id="applications" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Aplicaciones</h2>
+        <p class="section-subtitle">
+            La computación en la nube se ha integrado en prácticamente todas las áreas tecnológicas, empresariales y sociales, 
+            ofreciendo escalabilidad, disponibilidad global y costos accesibles.
+        </p>
+        <section id="intro" class="section">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text">
+            
+                     <p>El Cloud Computing se utiliza ampliamente en plataformas educativas para almacenar recursos,
+                     impartir clases virtuales y permitir el acceso remoto a materiales desde cualquier dispositivo. 
+                     En el sector empresarial, la nube facilita la gestión de bases de datos, sistemas contables, 
+                     inventarios y aplicaciones de productividad sin necesidad de infraestructura local. También es
+                     fundamental para el funcionamiento de servicios de streaming como Netflix, Spotify y YouTube,
+                     que dependen de servidores distribuidos para entregar contenido a millones de usuarios en tiempo real.</p>
+           
+           <p>En la industria tecnológica, la nube se emplea para entrenar modelos de inteligencia artificial, 
+                ejecutar aplicaciones de análisis de datos y desarrollar software de manera colaborativa. 
+                Asimismo, permite realizar copias de seguridad automáticas, proteger información mediante cifrado 
+                avanzado y garantizar la recuperación de datos ante fallos o desastres. Otro uso clave es la 
+                virtualización de escritorios y entornos de trabajo, lo que permite que empleados accedan a sus 
+                herramientas desde cualquier ubicación sin comprometer la seguridad.</p>
+                
+                       </div>
+                     <div class="intro-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=60" 
+     style="width:100%; max-width:550px; border-radius:15px;">
+                    <p class="img-caption">DATA CENTER</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="intro-text">
+        <div style="flex: 1;">
+                     <p>  Además, el cloud se usa ampliamente para almacenamiento seguro. Las empresas pueden guardar documentos, imágenes, bases de datos y copias de respaldo de manera ordenada y accesible, protegiéndose contra pérdidas accidentales o fallos de hardware. Este tipo de almacenamiento también se integra con sistemas móviles, lo que hace posible sincronizar archivos entre múltiples dispositivos sin esfuerzo.
+
+                     Finalmente, la nube sirve para alojar servicios críticos como autenticación, monitoreo de sistemas, automatización empresarial y despliegue de inteligencia artificial. Gracias a estos servicios, las organizaciones pueden mejorar su seguridad, optimizar sus flujos de trabajo y utilizar tecnologías avanzadas sin necesidad de administrar complejas infraestructuras internas.</p>
+    </section>
+         </div>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(#e8f1ff, #ffffff);
+    }
+
+    h1 {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 32px;
+        color: #0057d9;
+        letter-spacing: 1px;
+    }
+
+    .timeline-container {
+        width: 85%;
+        margin: auto;
+        position: relative;
+        padding: 40px 0;
+    }
+
+
+    .timeline-container::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+        border-radius: 2px;
+        background: linear-gradient(to bottom, rgba(0, 119, 255, 0) 0%, #0077ff 20%, #0077ff 80%, rgba(0, 119, 255, 0) 100%);
+    }
+
+    .timeline-item {
+        margin: 30px 0;
+        width: 50%;
+        padding: 15px;
+        position: relative;
+        animation: fadeInUp 0.8s ease forwards;
+        opacity: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline-bubble {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+        border-left: 5px solid #0077ff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative; 
+        cursor: pointer;
+    }
+
+    .timeline-bubble:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .timeline-year {
+        font-size: 20px;
+        font-weight: bold;
+        color: #0057d9;
+        margin-bottom: 5px;
+    }
+
+    .timeline-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+        background: #0077ff;
+        border-radius: 50%;
+        position: absolute;
+        top: 22px;
+        left: calc(50% - 8px);
+    }
+
+   .timeline-bubble .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 250px;
+    background-color: #ffffff; 
+    color: #333333; 
+    text-align: left;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    position: absolute;
+    top: 100%;  /*Llevo 4 horas en esto ayuda*/
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    z-index: 10;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+    .timeline-bubble:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @keyframes fadeInUp {
+        0% { transform: translateY(40px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width:900px) {
+        .timeline-container::before { left: 10px; }
+        .timeline-item {
+            width: 100%;
+            padding-left: 50px;
+        }
+        .timeline-item:nth-child(even), .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        .timeline-dot { left: 2px; }
+        .timeline-bubble { flex-direction: row; gap: 10px; }
+        .timeline-bubble .tooltip { left: 50%; transform: translateX(-50%); top: 100%; margin-top: 8px; }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>📘 Línea del Tiempo del Cloud Computing</h1>
+
+<div class="timeline-container">
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" alt="Mainframe" class="timeline-icon">
+            <div>
+                <div class="timeline-year">1960s</div>
+                Orígenes con mainframes y primer concepto de computación remota.
+                <div class="tooltip">Las universidades y empresas comenzaron a usar mainframes compartidos para procesar datos de forma remota, sentando las bases del cloud.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888853.png" alt="Internet" class="timeline-icon">
+            <div>
+                <div class="timeline-year">1969</div>
+                Nace ARPANET, precursor de Internet.
+                <div class="tooltip">ARPANET permitió la conexión entre universidades, mostrando que los recursos podían compartirse a través de una red global.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" alt="AWS" class="timeline-icon">
+            <div>
+                <div class="timeline-year">2006</div>
+                Amazon lanza AWS.
+                <div class="tooltip">AWS ofreció servidores, almacenamiento y servicios de cómputo bajo demanda, popularizando el modelo de pago por uso en la nube.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888837.png" alt="Office 365" class="timeline-icon">
+            <div>
+                <div class="timeline-year">2011</div>
+                Microsoft lanza Office 365.
+                <div class="tooltip">Permite usar Word, Excel y otros programas en línea, fomentando colaboración y productividad desde cualquier lugar.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888843.png" alt="Google Drive" class="timeline-icon">
+            <div>
+                <div class="timeline-year">2012</div>
+                Google lanza Drive.
+                <div class="tooltip">Almacenamiento y colaboración en la nube que permite compartir documentos, hojas de cálculo y presentaciones en tiempo real.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888850.png" alt="Edge Computing" class="timeline-icon">
+            <div>
+                <div class="timeline-year">2019</div>
+                Edge Computing se integra con la nube.
+                <div class="tooltip">Procesamiento local cercano al usuario combinado con la nube, reduciendo latencia y mejorando eficiencia de aplicaciones críticas.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-bubble">
+            <img src="https://cdn-icons-png.flaticon.com/512/888/888865.png" alt="IA" class="timeline-icon">
+            <div>
+                <div class="timeline-year">Actualidad</div>
+                IA, Big Data y automatización dependen de la nube.
+                <div class="tooltip">Las plataformas cloud permiten entrenar modelos de IA, procesar grandes volúmenes de datos y automatizar procesos sin infraestructura local.</div>
+            </div>
+        </div>
+    </div>
+
+</div>
