@@ -7,70 +7,16 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            background: #f5f5f5;
-        }
-
-        .credits-section {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-
-        .credits-section h2 {
-            text-align: center;
-            color: #4a6cf7;
-            margin-bottom: 25px;
-        }
-
-        .credits-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 17px;
-        }
-
-        .credits-table th {
-            background: #4a6cf7;
-            color: white;
-            padding: 12px;
-            text-align: center;
-        }
-
-        .credits-table td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .credits-table tr:hover {
-            background: #eef1ff;
-        }
-
-        .footer {
-            background: #181818;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <header class="hero" id="home" style="background-image:
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1350&q=80');">
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1470&q=80');">
 
         <nav class="navbar">
-            <div class="nav-brand">Créditos</div>
+            <div class="nav-brand">Créditos del Proyecto</div>
             <ul class="nav-menu">
                 <li><a href="test2.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -83,57 +29,86 @@
 
         <div class="hero-content">
             <h1>Créditos del Proyecto</h1>
-            <p class="hero-subtitle">Integrantes del Grupo • Programación II • 2025</p>
+            <p class="hero-subtitle">Cloud Computing | Programación II – 2025</p>
         </div>
     </header>
 
     <main>
-        <section class="credits-section">
-            <h2>Integrantes del Grupo</h2>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" style="text-align:center;">Integrantes del Grupo</h2>
+                <p class="section-subtitle" style="text-align:center;">
+                    Proyecto de Investigación sobre Cloud Computing.
+                </p>
 
-            <table class="credits-table">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Carné</th>
-                </tr>
-
-                <tr>
-                    <td>Armas López, Mario José</td>
-                    <td>AL100622</td>
-                </tr>
-
-                <tr>
-                    <td>Bolaños Muñoz, Vanessa Alexandra</td>
-                    <td>BM100724</td>
-                </tr>
-
-                <tr>
-                    <td>Galdámez Aguilar, Luis Oscar</td>
-                    <td>GA100824</td>
-                </tr>
-
-                <tr>
-                    <td>Herrera Larios, Luis Alejandro</td>
-                    <td>HL100424</td>
-                </tr>
-
-                <tr>
-                    <td>Interiano Pérez, José Samir</td>
-                    <td>IP100222</td>
-                </tr>
-
-                <tr>
-                    <td>Vigil Rivera, Camila Liseth</td>
-                    <td>VR100823</td>
-                </tr>
-            </table>
+                <div style="max-width:700px;margin:0 auto;border-radius:12px;padding:25px 20px;background:#ffffff;box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                    <table style="width:100%;border-collapse:collapse;font-family:'Roboto',sans-serif;">
+                        <thead>
+                            <tr style="background:#f3f6ff;">
+                                <th style="padding:10px 8px;text-align:left;">Nombre</th>
+                                <th style="padding:10px 8px;text-align:left;">Carné</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding:8px 8px;">Armas López, Mario José</td>
+                                <td style="padding:8px 8px;">AL100622</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 8px;">Bolaños Muñoz, Vanessa Alexandra</td>
+                                <td style="padding:8px 8px;">BM100724</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 8px;">Galdámez Aguilar, Luis Oscar</td>
+                                <td style="padding:8px 8px;">GA100824</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 8px;">Herrera Larios, Luis Alejandro</td>
+                                <td style="padding:8px 8px;">HL100424</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 8px;">Interiano Pérez, José Samir</td>
+                                <td style="padding:8px 8px;">IP100222</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px 8px;">Vigil Rivera, Camila Liseth</td>
+                                <td style="padding:8px 8px;">VR100823</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2025 Cloud Computing | Investigación Académica</p>
-        <p>Universidad Francisco Gavidia - Programación II</p>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cloud Computing | Investigación Académica</p>
+            <p>Universidad Francisco Gavidia - Programación II</p>
+        </div>
     </footer>
+
+    <script>
+        window.addEventListener("load", function () {
+            var nombre = prompt("Bienvenido, ¿Cuál es tu nombre?");
+            var mensajeBase =
+                "Estos son los integrantes del grupo:\n\n" +
+                "Armas López, Mario José — AL100622\n" +
+                "Bolaños Muñoz, Vanessa Alexandra — BM100724\n" +
+                "Galdámez Aguilar, Luis Oscar — GA100824\n" +
+                "Herrera Larios, Luis Alejandro — HL100424\n" +
+                "Interiano Pérez, José Samir — IP100222\n" +
+                "Vigil Rivera, Camila Liseth — VR100823\n\n" +
+                "Universidad Francisco Gavidia\n" +
+                "Programación II – 2025";
+
+            if (nombre && nombre.trim() !== "") {
+                alert("Hola " + nombre + " 👋\n\n" + mensajeBase);
+            } else {
+                alert(mensajeBase);
+            }
+        });
+    </script>
 
 </body>
 </html>
