@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilos específicos de esta página -->
+    <style>
+        .services-wrapper {
+            background: #f5f5f5;
+            padding: 40px 0 70px;
+        }
+
+        /* Banda azul con el título */
+        .services-header {
+            background: #4a6cf7;
+            padding: 30px 20px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .services-header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .services-header p {
+            margin: 8px 0 0;
+            font-size: 16px;
+        }
+
+        /* Tarjetas de cada tipo de servicio */
+        .services-card {
+            background: #ffffff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .services-card h2 {
+            color: #4a6cf7;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +61,7 @@
         <nav class="navbar">
             <div class="nav-brand">Tipos de Servicios de Cloud Computing</div>
             <ul class="nav-menu">
-              <li><a href="test2.html">Inicio</a></li>
+                <li><a href="test2.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="proveedores.html">Proveedores</a></li>
                 <li><a href="beneficios.html">Ventajas y Desventajas</a></li>
@@ -30,84 +73,52 @@
         <div class="hero-content">
             <h1>Tipos de servicios de Cloud Computing</h1>
             <p class="hero-subtitle">Los modelos que impulsan la nube moderna</p>
+            <!-- Este botón baja a la banda azul -->
             <a href="#intro" class="btn-primary">Explorar más</a>
         </div>
     </header>
 
-  <head>
-  <id="intro" class="section">
-        <div class="container">
-            <div class="intro-grid">
-                <div class="intro-text">
-    <title>Servicios en la Nube: IaaS, PaaS y SaaS</title>
-    </div>
+    <!-- CONTENIDO DE SERVICIOS -->
+    <section id="intro" class="services-wrapper">
+
+        <div class="services-header">
+            <h1>Tipos de Servicios en la Nube</h1>
+            <p>IaaS, PaaS y SaaS</p>
         </div>
-    </id>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #4a6cf7;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        section {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #4a6cf7;
-        }
-    </style>
-</head>
 
-<body>
+        <article class="services-card">
+            <h2>IaaS (Infrastructure as a Service)</h2>
+            <p>
+                IaaS ofrece infraestructura como servidores, redes y almacenamiento a través de la nube.
+                El usuario controla el sistema operativo y las aplicaciones, mientras que el proveedor
+                administra el hardware. Es ideal para empresas que necesitan flexibilidad y personalización.
+            </p>
+            <p><strong>Ejemplos:</strong> AWS EC2, Azure Virtual Machines, Google Compute Engine.</p>
+        </article>
 
-    <header>
-        <h1>Tipos de Servicios en la Nube</h1>
-        <p>IaaS, PaaS y SaaS</p>
-    </header>
+        <article class="services-card">
+            <h2>PaaS (Platform as a Service)</h2>
+            <p>
+                PaaS proporciona una plataforma lista para desarrollar y ejecutar aplicaciones sin preocuparse
+                por la infraestructura o la administración del servidor. Facilita el desarrollo rápido y
+                eficiente para programadores.
+            </p>
+            <p><strong>Ejemplos:</strong> Google App Engine, Heroku, Azure App Service.</p>
+        </article>
 
-    <section>
-        <h2>IaaS (Infrastructure as a Service)</h2>
-        <p>
-            IaaS ofrece infraestructura como servidores, redes y almacenamiento a través de la nube.
-            El usuario controla el sistema operativo y las aplicaciones, mientras que el proveedor
-            administra el hardware. Es ideal para empresas que necesitan flexibilidad y personalización.
-        </p>
-        <p><strong>Ejemplos:</strong> AWS EC2, Azure Virtual Machines, Google Compute Engine.</p>
+        <article class="services-card">
+            <h2>SaaS (Software as a Service)</h2>
+            <p>
+                SaaS ofrece software completo listo para usar a través de internet. No requiere instalación
+                y las actualizaciones son automáticas. Es ideal para usuarios que buscan facilidad y acceso inmediato.
+            </p>
+            <p><strong>Ejemplos:</strong> Gmail, Microsoft 365, Dropbox, Salesforce.</p>
+        </article>
+
     </section>
 
-    <section>
-        <h2>PaaS (Platform as a Service)</h2>
-        <p>
-            PaaS proporciona una plataforma lista para desarrollar y ejecutar aplicaciones sin preocuparse
-            por la infraestructura o la administración del servidor. Facilita el desarrollo rápido y
-            eficiente para programadores.
-        </p>
-        <p><strong>Ejemplos:</strong> Google App Engine, Heroku, Azure App Service.</p>
-    </section>
-
-    <section>
-        <h2>SaaS (Software as a Service)</h2>
-        <p>
-            SaaS ofrece software completo listo para usar a través de internet. No requiere instalación
-            y las actualizaciones son automáticas. Es ideal para usuarios que buscan facilidad y acceso inmediato.
-        </p>
-        <p><strong>Ejemplos:</strong> Gmail, Microsoft 365, Dropbox, Salesforce.</p>
-    </section>
-
-
- <footer id="contact" class="footer">
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
         <div class="container">
             <p>&copy; 2025 Cloud Computing | Investigación Académica</p>
             <p>Universidad Francisco Gavidia - Programación II</p>
@@ -115,8 +126,9 @@
     </footer>
 
 </body>
-
 </html>
+
+
 
 
 
