@@ -20,8 +20,7 @@
             background: linear-gradient(#e8f1ff, #ffffff);
         }
 
-        /* Ajuste general de títulos de esta página
-           (el H1 del hero usa sus propios estilos en style.css) */
+        /* Título grande del timeline */
         h1.page-title {
             text-align: center;
             padding: 30px 0;
@@ -190,6 +189,7 @@
         <div class="hero-content">
             <h1>Aplicaciones de Cloud Computing</h1>
             <p class="hero-subtitle">Soluciones en la nube para cada necesidad digital</p>
+            <!-- OJO: apunta a #intro -->
             <a href="#intro" class="btn-primary">Explorar más</a>
         </div>
     </header>
@@ -197,7 +197,8 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <section id="applications" class="section bg-light">
+        <!-- AHORA ESTA ES LA SECCIÓN CON id="intro" -->
+        <section id="intro" class="section bg-light">
             <div class="container">
                 <h2 class="section-title">Aplicaciones</h2>
                 <p class="section-subtitle">
@@ -206,54 +207,52 @@
                 </p>
             </div>
 
-            <section id="intro" class="section">
-                <div class="container">
-                    <div class="intro-grid">
-                        <div class="intro-text">
-                            <p>
-                                El Cloud Computing se utiliza ampliamente en plataformas educativas para almacenar recursos,
-                                impartir clases virtuales y permitir el acceso remoto a materiales desde cualquier dispositivo. 
-                                En el sector empresarial, la nube facilita la gestión de bases de datos, sistemas contables, 
-                                inventarios y aplicaciones de productividad sin necesidad de infraestructura local. También es
-                                fundamental para el funcionamiento de servicios de streaming como Netflix, Spotify y YouTube,
-                                que dependen de servidores distribuidos para entregar contenido a millones de usuarios en tiempo real.
-                            </p>
-
-                            <p>
-                                En la industria tecnológica, la nube se emplea para entrenar modelos de inteligencia artificial, 
-                                ejecutar aplicaciones de análisis de datos y desarrollar software de manera colaborativa. 
-                                Asimismo, permite realizar copias de seguridad automáticas, proteger información mediante cifrado 
-                                avanzado y garantizar la recuperación de datos ante fallos o desastres. Otro uso clave es la 
-                                virtualización de escritorios y entornos de trabajo, lo que permite que empleados accedan a sus 
-                                herramientas desde cualquier ubicación sin comprometer la seguridad.
-                            </p>
-                        </div>
-
-                        <div class="intro-image">
-                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=60" 
-                                 style="width:100%; max-width:550px; border-radius:15px;">
-                            <p class="img-caption">DATA CENTER</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
+            <div class="container">
+                <div class="intro-grid">
                     <div class="intro-text">
                         <p>
-                            Además, el cloud se usa ampliamente para almacenamiento seguro. Las empresas pueden guardar documentos, imágenes, 
-                            bases de datos y copias de respaldo de manera ordenada y accesible, protegiéndose contra pérdidas accidentales 
-                            o fallos de hardware. Este tipo de almacenamiento también se integra con sistemas móviles, lo que hace posible 
-                            sincronizar archivos entre múltiples dispositivos sin esfuerzo.
+                            El Cloud Computing se utiliza ampliamente en plataformas educativas para almacenar recursos,
+                            impartir clases virtuales y permitir el acceso remoto a materiales desde cualquier dispositivo. 
+                            En el sector empresarial, la nube facilita la gestión de bases de datos, sistemas contables, 
+                            inventarios y aplicaciones de productividad sin necesidad de infraestructura local. También es
+                            fundamental para el funcionamiento de servicios de streaming como Netflix, Spotify y YouTube,
+                            que dependen de servidores distribuidos para entregar contenido a millones de usuarios en tiempo real.
                         </p>
 
                         <p>
-                            Finalmente, la nube sirve para alojar servicios críticos como autenticación, monitoreo de sistemas, automatización empresarial 
-                            y despliegue de inteligencia artificial. Gracias a estos servicios, las organizaciones pueden mejorar su seguridad, 
-                            optimizar sus flujos de trabajo y utilizar tecnologías avanzadas sin necesidad de administrar complejas infraestructuras internas.
+                            En la industria tecnológica, la nube se emplea para entrenar modelos de inteligencia artificial, 
+                            ejecutar aplicaciones de análisis de datos y desarrollar software de manera colaborativa. 
+                            Asimismo, permite realizar copias de seguridad automáticas, proteger información mediante cifrado 
+                            avanzado y garantizar la recuperación de datos ante fallos o desastres. Otro uso clave es la 
+                            virtualización de escritorios y entornos de trabajo, lo que permite que empleados accedan a sus 
+                            herramientas desde cualquier ubicación sin comprometer la seguridad.
                         </p>
                     </div>
+
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=60" 
+                             style="width:100%; max-width:550px; border-radius:15px;">
+                        <p class="img-caption">DATA CENTER</p>
+                    </div>
                 </div>
-            </section>
+            </div>
+
+            <div class="container">
+                <div class="intro-text">
+                    <p>
+                        Además, el cloud se usa ampliamente para almacenamiento seguro. Las empresas pueden guardar documentos, imágenes, 
+                        bases de datos y copias de respaldo de manera ordenada y accesible, protegiéndose contra pérdidas accidentales 
+                        o fallos de hardware. Este tipo de almacenamiento también se integra con sistemas móviles, lo que hace posible 
+                        sincronizar archivos entre múltiples dispositivos sin esfuerzo.
+                    </p>
+
+                    <p>
+                        Finalmente, la nube sirve para alojar servicios críticos como autenticación, monitoreo de sistemas, automatización empresarial 
+                        y despliegue de inteligencia artificial. Gracias a estos servicios, las organizaciones pueden mejorar su seguridad, 
+                        optimizar sus flujos de trabajo y utilizar tecnologías avanzadas sin necesidad de administrar complejas infraestructuras internas.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- TÍTULO DEL TIMELINE -->
@@ -381,6 +380,8 @@
 
 </body>
 </html>
+
+
 
 
 
