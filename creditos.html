@@ -100,6 +100,11 @@
 
     <script>
         window.addEventListener("load", function () {
+            if ("scrollRestoration" in history) {
+                history.scrollRestoration = "manual";
+            }
+            window.scrollTo(0, 0);
+
             var nombre = prompt("Bienvenido, ¿Cuál es tu nombre?");
             var mensaje =
                 "Estos son los integrantes del grupo:\n\n" +
@@ -122,3 +127,4 @@
 
 </body>
 </html>
+
